@@ -3,7 +3,7 @@
 <br />
 <div align="center">
 
-  <h3 align="center">HeartbeatAI</h3>
+  <h3 align="center">PET ECG MODEL</h3>
 
   <p align="center">
     Catching abnormal heartbeats using a deep learning autoencoder trained on ECG data.
