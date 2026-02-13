@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+*.npy
+*.pth
+.vscode/
+pyrightconfig.json
+run_preprocess.bat
+run_preprocess.ps1
