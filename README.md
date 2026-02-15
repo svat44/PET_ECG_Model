@@ -103,7 +103,7 @@ Pretty straightforward:
 1. Run every beat through the trained model
 2. Compute the MSE between the original and the reconstruction
 3. Set a threshold at `mean + 3σ` of the normal training errors
-4. Anything above that threshold → flagged as anomalous
+4. Anything above that threshold is flagged as anomalous, although the threshold is still buggy.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,11 +178,11 @@ Tested on record `119` from MIT-BIH (which has a mix of normal and abnormal beat
 | Anomaly score | 0.26 |
 | **AUC** | **0.9614** |
 
-The AUC of 0.96 means the model does a solid job separating normal from abnormal beats based on reconstruction error alone.
+The AUC of 0.96 shows the model's quality of separating normal from abnormal beats based on reconstruction error.
 
 ### Error Distribution
 
-Normal beats cluster at low error, abnormal beats spread out higher. The red line is the threshold.
+Normal beats cluster at low error, abnormal beats spread out higher. The red line is the threshold, although threshold seems a little buggy.
 
 <div align="center">
   <img src="results/error_histogram.png" alt="Error Histogram" width="600">
